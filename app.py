@@ -24,3 +24,6 @@ def agregar():
     DB.session.add(nuevo) # Agrega un nuevo objeto a la base
     DB.session.commit() # Guarda los cambios en MySQL
     return redirect(url_for('index')) # Redirige para evitar reenvios de formularios
+
+if __name__ == '__main__':
+    app.run(debug=True)
