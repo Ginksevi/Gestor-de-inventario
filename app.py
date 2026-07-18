@@ -8,8 +8,8 @@ app = Flask(__name__)
 app.config.from_object(config) # carga la configuracion
 db.init_app(app) # inicializa SQLAlchemy con la app
 
-with app.app_context():
-    db.create_all() # crea las tablas si no existen
+with app.app_context(): # crea las tablas si no existen
+    db.create_all() 
 
 @app.route('/')
 def index():
