@@ -18,13 +18,13 @@
         <th><th>ID</th><th>Nombre</th><th>Cantidad</th><th>Precios</th></th>
         {% for p in productos %}
         <tr>
-            <td>{{ p.id }}</td>
+            <td>{{ p.id_key }}</td>
             <td>{{ p.nombre }}</td> <!--Sintaxis jinja para mostrar datos-->
             <td>{{ p.cantidad }}</td>
             <td>{{ p.precio }}</td>
             <td>
-                <a href="{{ url_for('editar', id=p.id) }}" class="btn btn-warning btn-sm">Editar</a>
-                <a href="{{ url_for('eliminar', id=p.id) }}" class="btn btn-danger btn-sm">Eliminar</a>
+                <a href="{{ url_for('editar', id=p.id_key) }}" class="btn btn-warning btn-sm">Editar</a>
+                <a href="{{ url_for('eliminar', id=p.id_key) }}" class="btn btn-danger btn-sm">Eliminar</a>
             </td>
         </tr>
         {% endfor %}
