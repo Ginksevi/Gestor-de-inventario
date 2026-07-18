@@ -1,3 +1,3 @@
-SQALCHEMY_DATABASE_URI = 'mysql+pymysql://flaskuser:TuContraseñaSegura123@localhost/Gestor_de_inventario'
-SQALCHEMY_TRACK_MODIFICATIONS = False
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://flaskuser:tucontraseñasegura@localhost:3306/inventario' # Debes cambiar "flaskuser" por tu usuario de MySQL y la contraseña
+SQLALCHEMY_TRACK_MODIFICATIONS = False
 SECRET_KEY = 'clave secreta'
