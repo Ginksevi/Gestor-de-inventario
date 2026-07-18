@@ -22,3 +22,5 @@ Ahorra tiempo en diseño y asegura la responsividad
 
 ### Context managers (DB.session):
 Garantiza que las operaciones de DB sean seguras y consistentes
+
+Esta aplicacion aunque basica permite gestionar facilmente elementos de una tabla de datos con MySQL, tiene funciones para crear, editar y eliminar elementos de la base de datos directamente desde el navegador y muestra en pantalla los datos que se van modificando
